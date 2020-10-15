@@ -8,7 +8,6 @@ const instance = axios.create({
 });
 
 
-/* GET users listing. */
 router.get('/', async function(req, res, next) {
   try{
     const result =  await instance.get('/players/3141');
